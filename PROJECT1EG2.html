@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <div class="nav">
+        <center><img class="centered-block" src="worknest.jpg" width="480px" height="100px"  alt="Project Icon"></center>
+     </div>
+    
+</div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering Individuals Through Decent Work</title>
+    
+    <style>
+       .nav{
+        background-color: white
+        ;
+       }
+       header{
+        background-color: white ;
+    
+       }
+        body {
+            body { font-family: Arial; background:#eef3f7; margin:0; }
+    nav { background:#0a6ebd; padding:15px; }
+    nav a { color:#fff; text-decoration:none; margin-right:20px; font-weight:bold; }
+    .container { width:80%; margin:auto; }
+    .card {
+      background:white; padding:20px; border-radius:10px;
+      box-shadow:0 0 10px #ccc; margin-top:25px;
+    }
+    table { width:100%; border-collapse:collapse; }
+    th, td {
+      border:1px solid #ccc; padding:10px; text-align:left;
+    }
+    th { background:#dff0ff; }
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f7f6;
+            background-image: url("bkg.jpg"); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            overflow-x: hidden; 
+        }
+        
+        
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px 40px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+       
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+       
+        h1 {
+            color: #ffffff; 
+            border-bottom: 4px solid #000000;
+            padding-bottom: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            animation: slideInRight 1s ease-out;
+        }
+        h2 {
+            color: #218838; 
+            margin-top: 35px;
+            font-size: 1.7em;
+            animation: slideInLeft 1s ease-out;
+        }
+        h3 {
+            color: #495057;
+            border-left: 6px solid #ffcc00; 
+            padding-left: 15px;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+      
+        .icon {
+            font-size: 1.8em;
+            margin-right: 12px;
+            vertical-align: middle;
+            color: #007bff; 
+            animation: pulse 2s infinite ease-in-out;
+        }
+        .intro p {
+            font-style: italic;
+            border-left: 5px solid #007bff;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            background-color: #e6f2ff;
+            padding: 15px;
+            border-radius: 8px;
+            animation: fadeIn 1.3s ease-out;
+        }
+
+        
+        .quote {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 1.4em;
+            color: #0056b3;
+            font-weight: bold;
+            font-style: italic;
+            padding: 20px;
+            background-color: #e6f2ff;
+            border-left: 8px solid #00ff55;
+            border-right: 8px solid #00ff1a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.8s ease-out;
+        }
+
+        .venn-diagram {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0;
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+            animation: fadeIn 2s ease-out;
+        }
+        .venn-diagram-title {
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #0056b3;
+            font-size: 1.2em;
+        }
+        .circle-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        .circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            position: absolute;
+            opacity: 0.7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 3px solid;
+            transition: all 0.3s ease-in-out;
+        }
+        .circle:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        #skill {
+            background-color: #ffe0e6; 
+            border-color: #ff6699; 
+            top: 30px;
+            left: 0;
+        }
+        #opportunities {
+            background-color: #e0f2ff; 
+            border-color: #66b3ff; 
+            top: 30px;
+            right: 0;
+        }
+        #wages {
+            background-color: #e6ffe6; 
+            border-color: #66cc66; 
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .overlap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            color: #000;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            font-size: 1.1em;
+            z-index: 10;
+        }
+        .venn-diagram p {
+            margin-top: 30px;
+            font-size: 1.1em;
+            font-style: italic;
+            color: #555;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+   <center><nav>
+  <a href="projectpg2.html">Home</a>
+  <a href="projectpg2.html">Skills & Training</a>
+  <a href="projectpg3.html">Job Opportunities</a>
+  <a href="wages.html">Fair Wages & Rights</a>
+</nav></center>
+
+
+
+    
+    <div class="overlay">
+        <div class="container">
+            <div class="intro">
+                <h2>Introduction to Decent Work</h2>
+                <p>Decent Work, a cornerstone concept from the International Labour Organization (ILO), defines the conditions under which people can **work in freedom, equity, security, and human dignity**. It's about ensuring **productive work** that provides a **fair income**, security in the workplace, social protection for families, better prospects for personal development, and social integration. It emphasizes the fundamental rights of workers, the right to voice concerns, and equal opportunities and treatment for all.</p>
+            </div>
+
+            <p class="quote">"Work is not just earning; it is dignity and empowerment."</p>
+
+            <h1><span class="icon fas fa-handshake"></span> Empowering Individuals Through Decent Work</h1>
+
+            <hr>
+
+            <h2><span class="icon fas fa-chart-line"></span> Short Description on SDG 8</h2>
+            <p>Sustainable Development Goal 8 (SDG 8) calls for the promotion of **sustained, inclusive, and sustainable economic growth**, along with **full and productive employment** and **decent work for all** by 2030. Key focus areas include eradicating forced labour, promoting safe working environments, and ensuring equal pay for work of equal value.</p>
+
+            <hr>
+
+            <h3><span class="icon fas fa-graduation-cap"></span> Skill Development (Education & Training)</h3>
+            <p>Investment in quality education and vocational training is vital for workers to acquire the **in-demand skills** needed for today's evolving global economy. This ensures workers are **productive**, adaptable, and competitive, leading to better career prospects and stability. Lifelong learning initiatives are crucial for adapting to technological advancements and green transitions.</p>
+
+            <h3><span class="icon fas fa-briefcase"></span> Job Opportunities (Full & Productive Employment)</h3>
+            <p>Decent work requires robust policies that stimulate economic activity, support **entrepreneurship**, and formalize the economy to create an abundance of **meaningful job openings**. Focus is placed on sectors that drive sustainable development and benefit vulnerable groups, ensuring that economic growth translates into real employment for all.</p>
+
+            <h3><span class="icon fas fa-money-bill-wave"></span> Fair Wage Awareness (Equitable Pay)</h3>
+            <p>Awareness and enforcement of **fair wages** (including living wages) are crucial. This ensures that compensation is enough for a dignified life and that workers receive **equal pay for work of equal value**, eliminating discrimination and enhancing overall economic security. Collective bargaining plays a key role in advocating for better wage conditions.</p>
+
+            <hr>
+
+            <div class="venn-diagram">
+                <div class="venn-diagram-title">Venn Diagram: Overlap of Decent Work Pillars</div>
+                <div class="circle-container">
+                    <div class="circle" id="skill">Skill Development</div>
+                    <div class="circle" id="opportunities">Job Opportunities</div>
+                    <div class="circle" id="wages">Fair Wages</div>
+                    <div class="overlap">Decent Work</div>
+                </div>
+                <p><strong>Decent Work is the vibrant intersection where individuals' skills align with ample opportunities, all while being compensated with fair and equitable wages.</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
