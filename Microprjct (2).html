@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="nav">
+        <center><img class="centered-block" src="C:\Users\lab103\Desktop\FYIT1-14 RAJ GANGANI\worknest.jpg" width="480px" height="150px"  alt="Project Icon"></center>
+     </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empowering Individuals Through Decent Work</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    nav {
+      background: #0a6ebd;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      animation: slideUp 0.6s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #0a6ebd;
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #ffcc00;
+      padding-bottom: 15px;
+    }
+
+    h2 {
+      color: #218838;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    h3 {
+      color: #495057;
+      border-left: 5px solid #ffcc00;
+      padding-left: 15px;
+      margin: 20px 0 10px;
+    }
+
+    .card {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .quote {
+      text-align: center;
+      font-size: 1.3em;
+      color: #0056b3;
+      font-style: italic;
+      font-weight: bold;
+      padding: 20px;
+      background: #e6f2ff;
+      border-left: 5px solid #00ff55;
+      border-right: 5px solid #00ff1a;
+      border-radius: 8px;
+      margin: 30px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #dff0ff;
+      font-weight: bold;
+      color: #0056b3;
+    }
+
+    tr:hover {
+      background: #f0f8ff;
+    }
+
+    .btn {
+      background: #0a6ebd;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: #218838;
+    }
+
+    .btn-secondary {
+      background: #6c757d;
+    }
+
+    .btn-secondary:hover {
+      background: #495057;
+    }
+
+    .icon {
+      color: #0a6ebd;
+      margin-right: 8px;
+    }
+
+    .venn-container {
+      text-align: center;
+      margin: 40px 0;
+      padding: 30px;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+
+    .circles {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      margin: 30px 0;
+    }
+
+    .circle {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 0.9em;
+      text-align: center;
+      padding: 10px;
+      opacity: 0.7;
+      transition: all 0.3s;
+      border: 3px solid;
+    }
+
+    .circle:hover {
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+
+    #skill-circle {
+      background: #ffe0e6;
+      border-color: #ff6699;
+      top: 50px;
+      left: 50px;
+    }
+
+    #opportunity-circle {
+      background: #e0f2ff;
+      border-color: #66b3ff;
+      top: 50px;
+      right: 50px;
+    }
+
+    #wage-circle {
+      background: #e6ffe6;
+      border-color: #66cc66;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      z-index: 10;
+    }
+
+    .filter-buttons {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .job-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 15px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #0a6ebd;
+      transition: transform 0.3s;
+    }
+
+    .job-card:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .salary-slider {
+      width: 100%;
+      margin: 15px 0;
+    }
+
+    .comparison-table {
+      margin-top: 20px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      animation: fadeIn 0.3s;
+    }
+
+    .modal-content {
+      background: white;
+      margin: 10% auto;
+      padding: 30px;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 500px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      animation: slideUp 0.3s;
+    }
+
+    .close-btn {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .close-btn:hover {
+      color: #000;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .active-tab {
+      color: #ffcc00 !important;
+      border-bottom: 3px solid #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-link active-tab" onclick="showPage('home')"><i class="fas fa-home"></i> Home</a>
+  <a href="#" class="nav-link" onclick="showPage('skills')"><i class="fas fa-graduation-cap"></i> Skills & Training</a>
+  <a href="#" class="nav-link" onclick="showPage('jobs')"><i class="fas fa-briefcase"></i> Job Opportunities</a>
+  <a href="#" class="nav-link" onclick="showPage('wages')"><i class="fas fa-money-bill-wave"></i> Fair Wages & Rights</a>
+ <a href="C:\Users\lab103\Desktop\FYIT1-14 RAJ GANGANI\sdg_8.html">SDG 8</a>
+</nav>
+
+<div class="container">
+
+  <!-- HOME PAGE -->
+  <div id="home" class="page">
+    <h1><i class="fas fa-handshake icon"></i> Empowering Individuals Through Decent Work</h1>
+    
+    <div class="card">
+      <h2><i class="fas fa-info-circle icon"></i> Introduction to Decent Work</h2>
+      <p>Decent Work, a cornerstone concept from the International Labour Organization (ILO), defines the conditions under which people can work in <strong>freedom, equity, security, and human dignity</strong>. It ensures productive work that provides fair income, workplace security, social protection, and equal opportunities for all.</p>
+    </div>
+
+    <p class="quote">"Work is not just earning; it is dignity and empowerment."</p>
+
+    <div class="card">
+      <h2><i class="fas fa-chart-line icon"></i> SDG 8: Decent Work & Economic Growth</h2>
+      <p>Sustainable Development Goal 8 calls for promotion of <strong>sustained, inclusive, and sustainable economic growth</strong>, along with <strong>full and productive employment</strong> and <strong>decent work for all by 2030</strong>. Key focus areas include eradicating forced labour, promoting safe workplaces, and ensuring equal pay.</p>
+      <button class="btn" onclick="showModal('sdg8Details')">Learn More About SDG 8</button>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-graduation-cap icon"></i> Skill Development (Education & Training)</h3>
+      <p>Investment in quality education and vocational training ensures workers acquire <strong>in-demand skills</strong> for the evolving global economy. This leads to better career prospects and stability.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-briefcase icon"></i> Job Opportunities (Full & Productive Employment)</h3>
+      <p>Decent work requires robust policies that stimulate economic activity, support entrepreneurship, and create <strong>meaningful job openings</strong> for vulnerable groups.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-coins icon"></i> Fair Wages (Equitable Pay)</h3>
+      <p>Awareness and enforcement of <strong>fair wages</strong> ensure compensation is enough for a dignified life and that workers receive <strong>equal pay for work of equal value</strong>.</p>
+    </div>
+
+    <div class="venn-container">
+      <h3>Venn Diagram: Overlap of Decent Work Pillars</h3>
+      <div class="circles">
+        <div class="circle" id="skill-circle">Skill Development</div>
+        <div class="circle" id="opportunity-circle">Job Opportunities</div>
+        <div class="circle" id="wage-circle">Fair Wages</div>
+        <div class="center-text">Decent Work</div>
+      </div>
+      <p><strong>Decent Work is the vibrant intersection where individuals' skills align with ample opportunities, all while being compensated with fair and equitable wages.</strong></p>
+    </div>
+  </div>
+
+  <!-- SKILLS PAGE -->
+  <div id="skills" class="page hidden">
+    <h1><i class="fas fa-graduation-cap icon"></i> Skill Development Programs</h1>
+    
+    <div class="card">
+      <p>Skills are the foundation of Decent Work. Training helps individuals improve their employability and access better job opportunities.</p>
+      <button class="btn" onclick="addTraining()"><i class="fas fa-plus"></i> Add New Training</button>
+    </div>
+
+    <h2>Available Training Options</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Skill Type</th>
+          <th>Duration</th>
+          <th>Level</th>
+          <th>Job Outcome</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="trainingTable">
+        <tr>
+          <td>Digital Literacy</td>
+          <td>1 Month</td>
+          <td>Beginner</td>
+          <td>Office Assistant, Data Entry</td>
+          <td><button class="btn" onclick="enrollCourse(this)">Enroll</button></td>
+        </tr>
+        <tr>
+          <td>Electrician Training</td>
+          <td>3 Months</td>
+          <td>Intermediate</td>
+          <td>Field Electrician, Technician</td>
+          <td><button class="btn" onclick="enrollCourse(this)">Enroll</button></td>
+        </tr>
+        <tr>
+          <td>Beautician Course</td>
+          <td>2 Months</td>
+          <td>Beginner</td>
+          <td>Salon Jobs, Home Business</td>
+          <td><button class="btn" onclick="enrollCourse(this)">Enroll</button></td>
+        </tr>
+        <tr>
+          <td>Web Development</td>
+          <td>4 Months</td>
+          <td>Intermediate</td>
+          <td>Web Developer, Freelancer</td>
+          <td><button class="btn" onclick="enrollCourse(this)">Enroll</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="enrollmentMessage"></div>
+  </div>
+
+  <!-- JOBS PAGE -->
+  <div id="jobs" class="page hidden">
+    <h1><i class="fas fa-briefcase icon"></i> Job Opportunities</h1>
+    
+    <div class="filter-buttons">
+      <button class="btn" onclick="filterJobs('all')">All Jobs</button>
+      <button class="btn btn-secondary" onclick="filterJobs('entry')">Entry Level</button>
+      <button class="btn btn-secondary" onclick="filterJobs('intermediate')">Intermediate</button>
+      <button class="btn btn-secondary" onclick="filterJobs('advanced')">Advanced</button>
+    </div>
+
+    <div>
+      <label for="salaryFilter"><strong>Filter by Salary Range:</strong></label>
+      <input type="range" id="salaryFilter" class="salary-slider" min="10000" max="50000" step="1000" onchange="filterBySalary()">
+      <p>Maximum Salary: ₹<span id="salaryValue">50000</span></p>
+    </div>
+
+    <div id="jobsContainer"></div>
+  </div>
+
+  <!-- WAGES PAGE -->
+  <div id="wages" class="page hidden">
+    <h1><i class="fas fa-money-bill-wave icon"></i> Fair Wages & Worker Rights</h1>
+    
+    <div class="card">
+      <h2>Understanding Fair Wages</h2>
+      <p>Fair wages ensure workers are respected, paid legally, and treated equally. It prevents exploitation and supports sustainable development.</p>
+      <button class="btn" onclick="showModal('wageRights')">Know Your Rights</button>
+    </div>
+
+    <h2>Comparison: Unfair Work vs. Decent Work</h2>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Aspect</th>
+          <th>Unfair Work</th>
+          <th>Decent Work</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Salary</strong></td>
+          <td>Below minimum wage</td>
+          <td>Fair and legal payment</td>
+        </tr>
+        <tr>
+          <td><strong>Safety</strong></td>
+          <td>No protective gear</td>
+          <td>Safety equipment provided</td>
+        </tr>
+        <tr>
+          <td><strong>Work Hours</strong></td>
+          <td>12–14 hours daily</td>
+          <td>8 hours + overtime pay</td>
+        </tr>
+        <tr>
+          <td><strong>Career Growth</strong></td>
+          <td>No training support</td>
+          <td>Continuous skill development</td>
+        </tr>
+        <tr>
+          <td><strong>Benefits</strong></td>
+          <td>None</td>
+          <td>Health insurance, Leave, Pension</td>
+        </tr>
+        <tr>
+          <td><strong>Voice & Rights</strong></td>
+          <td>No freedom to speak</td>
+          <td>Right to organize, Grievance redressal</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- MODALS -->
+<div id="sdg8Modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('sdg8Details')">&times;</span>
+    <h2>SDG 8: Decent Work & Economic Growth</h2>
+    <p>The UN's Sustainable Development Goal 8 focuses on:</p>
+    <ul style="text-align: left; margin: 15px 0;">
+      <li>Promoting sustainable economic growth</li>
+      <li>Achieving higher levels of economic productivity</li>
+      <li>Eradicating forced labour and child labour</li>
+      <li>Protecting labour rights and safe working environments</li>
+      <li>Encouraging entrepreneurship and innovation</li>
+      <li>Supporting job creation for youth</li>
+    </ul>
+    <button class="btn" onclick="closeModal('sdg8Details')">Close</button>
+  </div>
+</div>
+
+<div id="wageRightsModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('wageRights')">&times;</span>
+    <h2>Your Worker Rights</h2>
+    <p><strong>Every worker has the right to:</strong></p>
+    <ul style="text-align: left; margin: 15px 0;">
+      <li><strong>Fair Wages:</strong> At least minimum wage + living wage</li>
+      <li><strong>Safe Workplace:</strong> Protective equipment and safe conditions</li>
+      <li><strong>Maximum Work Hours:</strong> 8 hours per day, 48 hours per week</li>
+      <li><strong>Regular Leave:</strong> Paid leave and holidays</li>
+      <li><strong>Social Security:</strong> Health insurance and pension</li>
+      <li><strong>Freedom of Association:</strong> Right to join unions</li>
+      <li><strong>No Discrimination:</strong> Equal pay for equal work</li>
+    </ul>
+    <button class="btn" onclick="closeModal('wageRights')">Close</button>
+  </div>
+</div>
+
+<script>
+  const jobsData = [
+    { id: 1, title: 'Customer Support Assistant', level: 'entry', salary: 15000, skills: 'Communication, Basic Computer', features: 'Fixed hours • Equal pay • Safe workspace' },
+    { id: 2, title: 'Junior Electrician', level: 'intermediate', salary: 22000, skills: 'Electrical Course', features: 'Safety gear • Insurance • Tools provided' },
+    { id: 3, title: 'Beautician', level: 'entry', salary: 20000, skills: 'Beautician Training', features: 'Safe environment • Growth opportunities' },
+    { id: 4, title: 'Senior Software Developer', level: 'advanced', salary: 50000, skills: 'Programming, Web Development', features: 'Remote options • Health insurance • Performance bonus' },
+    { id: 5, title: 'Data Analyst', level: 'intermediate', salary: 30000, skills: 'Data Analysis, Excel, SQL', features: 'Career growth • Flexible hours • Training support' },
+    { id: 6, title: 'Marketing Executive', level: 'intermediate', salary: 25000, skills: 'Communication, Digital Marketing', features: 'Commission • Travel • Flexible work' }
+  ];
+
+  let enrolledCourses = [];
+  let selectedJobs = [...jobsData];
+
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+    document.getElementById(pageId).classList.remove('hidden');
+    
+    updateNavigation(pageId);
+    
+    if (pageId === 'jobs') renderJobs();
+  }
+
+  function updateNavigation(active) {
+    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active-tab'));
+    event.target.classList.add('active-tab');
+  }
+
+  function renderJobs() {
+    const container = document.getElementById('jobsContainer');
+    container.innerHTML = selectedJobs.length ? selectedJobs.map(job => `
+      <div class="job-card">
+        <h3>${job.title}</h3>
+        <p><strong>Skills Required:</strong> ${job.skills}</p>
+        <p><strong>Salary:</strong> ₹${job.salary.toLocaleString()}</p>
+        <p><strong>Decent Work Features:</strong> ${job.features}</p>
+        <button class="btn" onclick="applyJob('${job.title}')">Apply Now</button>
+      </div>
+    `).join('') : '<p style="text-align: center; color: #666;">No jobs match your criteria.</p>';
+  }
+
+  function filterJobs(level) {
+    selectedJobs = level === 'all' ? jobsData : jobsData.filter(job => job.level === level);
+    renderJobs();
+  }
+
+  function filterBySalary() {
+    const maxSalary = document.getElementById('salaryFilter').value;
+    document.getElementById('salaryValue').textContent = maxSalary;
+    selectedJobs = jobsData.filter(job => job.salary <= maxSalary);
+    renderJobs();
+  }
+
+  function applyJob(title) {
+    alert(`✓ Application submitted for: ${title}\n\nWe'll review your profile and contact you soon!`);
+  }
+
+  function enrollCourse(button) {
+    const row = button.closest('tr');
+    const courseName = row.cells[0].textContent;
+    
+    if (!enrolledCourses.includes(courseName)) {
+      enrolledCourses.push(courseName);
+      button.textContent = '✓ Enrolled';
+      button.disabled = true;
+      button.style.background = '#28a745';
+      
+      const msg = document.getElementById('enrollmentMessage');
+      msg.innerHTML = `<p style="color: green; margin-top: 15px;"><i class="fas fa-check-circle"></i> Successfully enrolled in <strong>${courseName}</strong>!</p>`;
+      setTimeout(() => msg.innerHTML = '', 3000);
+    }
+  }
+
+  function addTraining() {
+    const skillName = prompt('Enter new skill name:');
+    if (skillName) {
+      const table = document.getElementById('trainingTable');
+      const newRow = table.insertRow();
+      newRow.innerHTML = `
+        <td>${skillName}</td>
+        <td>3 Months</td>
+        <td>Intermediate</td>
+        <td>Career Growth</td>
+        <td><button class="btn" onclick="enrollCourse(this)">Enroll</button></td>
+      `;
+    }
+  }
+
+  function showModal(modalType) {
+    const modalId = modalType === 'sdg8Details' ? 'sdg8Modal' : 'wageRightsModal';
+    document.getElementById(modalId).style.display = 'block';
+  }
+
+  function closeModal(modalType) {
+    const modalId = modalType === 'sdg8Details' ? 'sdg8Modal' : 'wageRightsModal';
+    document.getElementById(modalId).style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+      event.target.style.display = 'none';
+    }
+  }
+
+  // Initialize
+  showPage('home');
+</script>
+
+</body>
+</html>
